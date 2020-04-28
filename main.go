@@ -51,6 +51,7 @@ func main() {
 		"--disable-breakpad",
 		"--disable-machine-id",
 		"--disable-encryption-win",
+		"--chrome-beta"
 	}
 
 	// Cleanup on exit

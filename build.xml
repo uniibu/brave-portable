@@ -1,9 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project name="brave" basedir=".">
 
+  <!-- Load ENV Vars -->
+  <property environment="env"/>
+
   <dirname property="app.basedir" file="${ant.file.brave}"/>
   <property name="build.properties" value="${app.basedir}/build.properties"/>
   <property file="${build.properties}"/>
+  <!-- Add atf urls -->
+  <property name="atf.win32.url" value="${env.BRAVE_IA32}"/>
+  <property name="atf.win64.url" value="${env.BRAVE_X64}"/>
 
   <!-- Load Portapps core build -->
   <property name="core.basedir" location="${app.basedir}\${core.dir}"/>
