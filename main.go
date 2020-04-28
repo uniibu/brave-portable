@@ -9,7 +9,7 @@ import (
 	"os"
 	"path"
 
-	"github.com/portapps/brave-portable/assets"
+	"github.com/uniibu/brave-portable/assets"
 	"github.com/portapps/portapps/v2"
 	"github.com/portapps/portapps/v2/pkg/log"
 	"github.com/portapps/portapps/v2/pkg/registry"

@@ -1,4 +1,4 @@
-module github.com/portapps/brave-portable
+module github.com/uniibu/brave-portable
 
 go 1.13
 
