@@ -7,6 +7,7 @@ before_install:
   - export PORTAPPS_VERSION=$(cat go.mod | grep github.com/portapps/portapps | awk '{print $NF}')
   - export BRAVE_X64=$(curl -sL https://brave-beta-version.devpod.workers.dev/x64)
   - export BRAVE_IA32=$(curl -sL https://brave-beta-version.devpod.workers.dev/ia32)
+  - export BRAVE_VERSION=$(curl -sL https://brave-beta-version.devpod.workers.dev/version)
 
 import:
   - portapps/portapps:.travis/configs/install.yml@v2.1.2

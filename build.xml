@@ -3,7 +3,7 @@
 
   <!-- Load ENV Vars -->
   <property environment="env"/>
-
+  <property name="app.version" value="${env.BRAVE_VERSION}"/>
   <dirname property="app.basedir" file="${ant.file.brave}"/>
   <property name="build.properties" value="${app.basedir}/build.properties"/>
   <property file="${build.properties}"/>
